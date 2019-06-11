@@ -16,7 +16,7 @@ spring:
     username: hyjy # 数据库用户名
     password: HYJY8888 # 数据库连接密码
   application:
-    name: microcloud-config-product-client
+    name: iep-config-product-client
   profiles: dev
 
 logging:
@@ -28,7 +28,7 @@ eureka:
     service-url:
       defaultZone: http://admin:enjoy@eureka1:7001/eureka,http://admin:enjoy@eureka2:7002/eureka,http://admin:enjoy@eureka3:7003/eureka  #带用户名密码注册
   instance:
-    instance-id: microcloud-provider-product-client
+    instance-id: iep-config-product-client
     prefer-ip-address: true
     lease-renewal-interval-in-seconds: 2 # 设置心跳的时间间隔（默认是30秒）
     lease-expiration-duration-in-seconds: 5  # 如果现在超过了5秒的间隔（默认是90秒）
@@ -58,7 +58,7 @@ spring:
     username: hyjy # 数据库用户名
     password: HYJY8888 # 数据库连接密码
   application:
-    name: microcloud-config-product-client
+    name: iep-config-product-client
   profiles: beta
 
 logging:
@@ -70,7 +70,7 @@ eureka:
     service-url:
       defaultZone: http://admin:enjoy@eureka1:7001/eureka,http://admin:enjoy@eureka2:7002/eureka,http://admin:enjoy@eureka3:7003/eureka  #带用户名密码注册
   instance:
-    instance-id: microcloud-provider-product
+    instance-id: iep-config-product-client
     prefer-ip-address: true
     lease-renewal-interval-in-seconds: 2 # 设置心跳的时间间隔（默认是30秒）
     lease-expiration-duration-in-seconds: 5  # 如果现在超过了5秒的间隔（默认是90秒）
