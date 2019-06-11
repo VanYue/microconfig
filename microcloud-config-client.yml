@@ -5,11 +5,20 @@ spring:
 ---
 server:
   port: 8201
+mybatis:
+  mapper-locations: # 所有的mapper映射文件
+  - classpath:mapping/*.xml
 
 spring:
   profiles: dev
   application:
       name: microconfig-dev-client???
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource # 配置当前要使用的数据源的操作类型
+    driver-class-name: com.mysql.jdbc.Driver # 配置MySQL的驱动程序类
+    url: jdbc:mysql://120.24.178.171:3306/evaluate?serverTimezone=GMT%2B8 # 数据库连接地址
+    username: hyjy # 数据库用户名
+    password: HYJY8888 # 数据库连接密码
 
 eureka:
  client:
@@ -36,3 +45,4 @@ eureka:
 info:
   app.name: microcloud-config-client-dev
   company.name: enjoy
+
