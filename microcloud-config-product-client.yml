@@ -28,13 +28,13 @@ eureka:
     service-url:
       defaultZone: http://admin:enjoy@eureka1:7001/eureka,http://admin:enjoy@eureka2:7002/eureka,http://admin:enjoy@eureka3:7003/eureka  #带用户名密码注册
   instance:
-    instance-id: microcloud-provider-product
+    instance-id: microcloud-provider-product-client
     prefer-ip-address: true
     lease-renewal-interval-in-seconds: 2 # 设置心跳的时间间隔（默认是30秒）
     lease-expiration-duration-in-seconds: 5  # 如果现在超过了5秒的间隔（默认是90秒）
 
 info:
-  app.name: microcloud-provider-product
+  app.name: iep-config-product-client
   company.name: enjoy
   build.artifactId: $project.artifactId$
   build.modelVersion: $project.modelVersion$
@@ -76,7 +76,7 @@ eureka:
     lease-expiration-duration-in-seconds: 5  # 如果现在超过了5秒的间隔（默认是90秒）
 
 info:
-  app.name: microcloud-provider-product
+  app.name: iep-config-product-client
   company.name: enjoy
   build.artifactId: $project.artifactId$
   build.modelVersion: $project.modelVersion$
