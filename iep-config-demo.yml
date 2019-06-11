@@ -26,7 +26,7 @@ logging:
 eureka:
   client: # 客户端进行Eureka注册的配置
     service-url:
-      defaultZone: http://admin:enjoy@eureka1:7001/eureka,http://admin:enjoy@eureka2:7002/eureka,http://admin:enjoy@eureka3:7003/eureka  #带用户名密码注册
+      defaultZone: http://admin:enjoy@localhost:7301/eureka  #带用户名密码注册
   instance:
     instance-id: iep-config-product-client
     prefer-ip-address: true
